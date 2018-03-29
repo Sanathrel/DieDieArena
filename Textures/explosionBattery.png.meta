@@ -1,15 +1,20 @@
 fileFormatVersion: 2
-guid: 417c622b29cb5c44dbf9a661d2cb8bb1
-timeCreated: 1522025559
+guid: be0b264cbd0cc6345a906d779f36f9df
+timeCreated: 1522182297
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: explostion_0
-    21300002: explostion_1
-    21300004: explostion_2
-    21300006: explostion_3
-    21300008: explostion_4
-    21300010: explostion_5
+    21300000: explosionBattery_0
+    21300002: explosionBattery_1
+    21300004: explosionBattery_2
+    21300006: explosionBattery_3
+    21300008: explosionBattery_4
+    21300010: explosionBattery_5
+    21300012: explosionBattery_6
+    21300014: explosionBattery_7
+    21300016: explosionBattery_8
+    21300018: explosionBattery_9
+    21300020: explosionBattery_10
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -86,13 +91,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: explostion_0
+      name: explosionBattery_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 24
-        width: 17
-        height: 17
+        x: 0
+        y: 404
+        width: 198
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -100,13 +105,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explostion_1
+      name: explosionBattery_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 18
-        width: 33
-        height: 30
+        x: 198
+        y: 404
+        width: 198
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,13 +119,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explostion_2
+      name: explosionBattery_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 19
-        width: 32
-        height: 29
+        x: 396
+        y: 404
+        width: 198
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,13 +133,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explostion_3
+      name: explosionBattery_3
       rect:
         serializedVersion: 2
-        x: 208
-        y: 18
-        width: 33
-        height: 30
+        x: 594
+        y: 404
+        width: 198
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,13 +147,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explostion_4
+      name: explosionBattery_4
       rect:
         serializedVersion: 2
-        x: 270
-        y: 18
-        width: 36
-        height: 30
+        x: 792
+        y: 404
+        width: 198
+        height: 190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,13 +161,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: explostion_5
+      name: explosionBattery_5
       rect:
         serializedVersion: 2
-        x: 334
-        y: 18
-        width: 36
-        height: 30
+        x: 0
+        y: 198
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explosionBattery_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 198
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explosionBattery_7
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 198
+        width: 198
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explosionBattery_8
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 198
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explosionBattery_9
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 198
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: explosionBattery_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 198
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

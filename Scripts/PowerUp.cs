@@ -9,14 +9,6 @@ public class PowerUp : MonoBehaviour {
     public static bool gunTwo = false;
     public static bool gunThree = false;
     public static int powerUpCount = 1;
-    public static int displayNextUpgrade;
-    public int nextUpgrade;
-    
-
-    private void Start()
-    {
-        displayNextUpgrade = nextUpgrade;
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -31,13 +23,13 @@ public class PowerUp : MonoBehaviour {
             Destroy(other.gameObject);
             Destroy(gameObject);
 
-            if (powerUpCount == nextUpgrade * 2 && gunThree == false)
+            if (powerUpCount == GameController.displayNextUpgrade * 2 && gunThree == false)
             {
                 gunThree = true;
                 powerUpCount = 1;
             }
 
-            else if (powerUpCount == nextUpgrade && gunTwo == false)
+            else if (powerUpCount == GameController.displayNextUpgrade && gunTwo == false)
             {
                 gunTwo = true;
                 powerUpCount = 1;

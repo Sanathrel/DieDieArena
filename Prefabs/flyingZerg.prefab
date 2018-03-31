@@ -124,6 +124,7 @@ MonoBehaviour:
   explosion: {fileID: 1290359573952616, guid: 64f8719e19f1f494c91f7b450d950eb6, type: 2}
   explosionPlayer: {fileID: 1161873821213916, guid: 17bf90e0b0de93b41ada4aadb9d614ea,
     type: 2}
+  popUp: {fileID: 1899598565737578, guid: 3ccc34c97e5087d4cb8999f90969a7c5, type: 2}
   scoreValue: 10
 --- !u!212 &212501025001307900
 SpriteRenderer:

@@ -15,10 +15,12 @@ public class GameController : MonoBehaviour {
     public Text batteryChargeText;
     public static int levelCount;
     public static int batteryCharge;
+    public static int displayNextUpgrade;
     public float spawnWait;
     public float startWait;
     public float waveWait;
     public int hazardCount;
+    public int nextUpgrade;
 
     private bool gameOver;
     private bool restart;
@@ -52,6 +54,8 @@ public class GameController : MonoBehaviour {
         batteryCharge = 0;
         UpdateBatteryCharge();
 
+        displayNextUpgrade = nextUpgrade;
+
         StartCoroutine(SpawnWaves());
     }
 
@@ -83,17 +87,17 @@ public class GameController : MonoBehaviour {
         batteryCharge = PowerUp.powerUpCount;
         if (PowerUp.gunTwo == false && PowerUp.gunThree == false)
         {
-            batteryChargeText.text = (batteryCharge - 1) + " / " + PowerUp.displayNextUpgrade + " : Half-charged";
+            batteryChargeText.text = (batteryCharge - 1) + " / " + nextUpgrade + " : Half-charged";
         }
 
         else if (PowerUp.gunTwo == true && PowerUp.gunThree == false)
         {
-            batteryChargeText.text = (batteryCharge - 1) + " / " + PowerUp.displayNextUpgrade * 2 + " : Full-charged";
+            batteryChargeText.text = (batteryCharge - 1) + " / " + nextUpgrade * 2 + " : Full-charged";
         }
         
         else
         {
-            batteryChargeText.text = PlayerController.displaySpeed + " : Speed";
+            batteryChargeText.text = PlayerController.displaySpeed + " % : Speed";
         }
     }
 

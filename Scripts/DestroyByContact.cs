@@ -6,6 +6,7 @@ public class DestroyByContact : MonoBehaviour {
     
     public GameObject explosion;
     public GameObject explosionPlayer;
+    public GameObject popUp;
     public int scoreValue;
 
     private GameController gameController;
@@ -31,6 +32,7 @@ public class DestroyByContact : MonoBehaviour {
         else if (other.gameObject.CompareTag("Bolt"))
         {
             Instantiate(explosion, transform.position, transform.rotation);
+            Instantiate(popUp, transform.position, transform.rotation);
             gameController.AddScore(scoreValue);
             Destroy(other.gameObject);
             Destroy(gameObject);

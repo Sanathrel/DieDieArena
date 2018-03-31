@@ -146,8 +146,10 @@ MonoBehaviour:
   shotSpawn_1: {fileID: 1196599512}
   shotSpawn_2: {fileID: 754629888}
   shotSpawn_3: {fileID: 816770955}
+  twoGunSprite: {fileID: 21300000, guid: 339f202240274c14d8e69cb3654235f7, type: 3}
+  threeGunSprite: {fileID: 21300000, guid: 77dc53304cdfc8545982f48898d0b8c7, type: 3}
   fireRate: 0.5
-  fireRateIncrease: 0.015
+  fireRateIncrease: 0.01
 --- !u!212 &240041976
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -182,7 +184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 77dc53304cdfc8545982f48898d0b8c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78e9b2199aa1f4847a24aa84889931e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -590,7 +592,7 @@ GameObject:
   - component: {fileID: 1053979092}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -855,6 +857,7 @@ MonoBehaviour:
   startWait: 1
   waveWait: 3
   hazardCount: 5
+  nextUpgrade: 5
 --- !u!1 &1519189031
 GameObject:
   m_ObjectHideFlags: 0

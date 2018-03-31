@@ -8,20 +8,38 @@ public class PlayerController : MonoBehaviour
     public Transform shotSpawn_1;
     public Transform shotSpawn_2;
     public Transform shotSpawn_3;
+    public Sprite twoGunSprite;
+    public Sprite threeGunSprite;
     public static float displaySpeed;
     public float fireRate;
     public float fireRateIncrease;
 
+    private SpriteRenderer sr;
+    private Vector3 objectPosition;
     private float nextFire;
     private float angle;
-    private Vector3 objectPosition;
+
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     private void Update()
     {
         objectPosition = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         angle = Mathf.Atan2(objectPosition.y, objectPosition.x) * Mathf.Rad2Deg;
 
-        transform.rotation = Quaternion.AngleAxis(angle - 20, Vector3.forward);
+        transform.rotation = Quaternion.AngleAxis(angle - 20, Vector3.forward);        
+
+        if (PowerUp.gunThree)
+        {
+            sr.sprite = threeGunSprite;
+        }
+
+        else if (PowerUp.gunTwo)
+        {
+            sr.sprite = twoGunSprite;
+        }
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
@@ -40,6 +58,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        displaySpeed = PowerUp.powerUpCount * fireRateIncrease;
+        if (displaySpeed <= 100)
+        {
+            displaySpeed = (PowerUp.powerUpCount * fireRateIncrease - fireRateIncrease) * 200;
+        }        
     }
 }
